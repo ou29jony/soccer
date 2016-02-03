@@ -1,0 +1,47 @@
+
+<div class="container" >
+  <div class="row" ng-init="loadfirst(1);getResult(1);getResult(0);">
+    <div class="col-md-4 col-md-offset-10">
+
+      <div class="btn-group" role="group" aria-label="First group">
+
+         <a  ng-href="/#pages/{{page}}">
+           <button ng-click="setPage(-1)"type="button" class="btn btn-default ">
+             <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          <span class="glyphicon-class"></span></button></a>
+<a  ng-href="/#pages/{{page}}">        <button ng-click="setPage(1)" type="button" class="btn btn-default ">
+<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          <span class="glyphicon-class"></span></button></a>
+      </div></div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+
+  <table class=" ">
+    <thead>
+    <tr class="first">
+      <th>Date</th>
+      <th>Challenge</th>
+      <th>Prognosis</th>
+      <th>1</th>
+      <th>x</th>
+      <th>2</th>
+      <th>Result</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="sct in soccerteamstable" class="even">
+      <td>{{sct.date.split('-')[0]}}.{{sct.date.split('-')[1]}}.{{sct.date.split('-')[2]}}</td>
+      <td>{{team1table[sct.team1id]['name']}} vs {{team2table[sct.team2id]['name']}}</td>
+      <td>1: {{prognosis[sct.id].team1}}%      2: {{prognosis[sct.id].team2}}%</td>
+      <td>{{sct.one | number:2}}</td>
+      <td>{{sct.x | number:2}}</td>
+      <td>{{sct.two | number:2}}</td>
+      <td>{{resulttable[sct.id].result}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+  </div>

@@ -1,0 +1,183 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.resultfarbe{
+  background: #00ff07;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  .transparent{
+    border-color: #fff;
+  }
+  table a:link {
+    color: #666;
+    font-weight: bold;
+    text-decoration:none;
+  }
+  table a:visited {
+    color: #999999;
+    font-weight:bold;
+    text-decoration:none;
+  }
+  table a:active,
+  table a:hover {
+    color: #000000;
+    text-decoration:underline;
+  }
+  table {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#000000;
+    font-size:12px;
+
+    background:#46b8da;
+    margin:20px;
+    border:transparent;
+
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+
+
+  }
+  table th {
+    padding:21px 25px 22px 25px;
+    border-top:1px solid transparent;
+    border-bottom:2px solid #ffffff;
+    font-size: large;
+
+    background: aliceblue;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+    background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+  }
+  table th:first-child {
+    text-align: left;
+    padding-left:20px;
+  }
+  table tr:first-child th:first-child {
+    -moz-border-radius-topleft:3px;
+    -webkit-border-top-left-radius:3px;
+    border-top-left-radius:3px;
+  }
+
+  table tr:first-child th:last-child {
+    -moz-border-radius-topright:3px;
+    -webkit-border-top-right-radius:3px;
+    border-top-right-radius:3px;
+  }
+  table tr {
+    text-align: center;
+    padding-left:20px;
+  }
+  table td:first-child {
+    text-align: left;
+    padding-left:20px;
+    border-left: 0;
+  }
+  table td {
+    padding:18px;
+    border-top: 1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+font-size: larger;
+    background: aliceblue;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+    background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+  }
+  table tr.even td {
+    background: aliceblue;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+    background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+  }
+  table tr:last-child td {
+    border-bottom:0;
+  }
+  table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft:3px;
+    -webkit-border-bottom-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+  table tr:last-child td:last-child {
+    -moz-border-radius-bottomright:3px;
+    -webkit-border-bottom-right-radius:3px;
+    border-bottom-right-radius:3px;
+  }
+  table tr:hover td {
+    background: aliceblue;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+    background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);
+  }
+
+}
